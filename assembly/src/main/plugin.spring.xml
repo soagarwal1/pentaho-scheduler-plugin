@@ -97,6 +97,8 @@ PentahoSystem which is initialized after Spring
   </bean>
   <bean class="org.pentaho.platform.genericfile.providers.repository.RepositoryFileProvider" scope="session"/>
 
+  <bean id="versionchecker" class="org.pentaho.platform.scheduler2.versionchecker.VersionCheckerAction" scope="prototype"/>
+
   <!-- CSRF protection. To disable, comment out the bean. -->
   <bean class="com.hitachivantara.security.web.impl.model.csrf.CsrfRequestSetConfigurationPojo">
     <pen:publish as-type="INTERFACES"/>
